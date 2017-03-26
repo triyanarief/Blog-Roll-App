@@ -91,6 +91,16 @@ var BlogsView = Backbone.View.extend({
 			}, 30);
 		},this);
 		this.model.on('remove', this.render, this);
+		this.model.fetch({
+			success: function(response) {
+				_.each(response.toJSON(), function(item) {
+					console.log('Successfully GOT blog with _id: ' + item._id);
+				})
+			},
+			error: function() {
+				console.log('Failed to get blogs!');
+			}
+		});
 	},
 	render: function() {
 		var self = this;
