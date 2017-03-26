@@ -16,12 +16,12 @@ mongoose.model('Blog', BlogSchema);
 
 var Blog = mongoose.model('Blog');
 
-var blog = new Blog({
-	author: 'Triyan',
-	title: 'Triyan\'s Blog',
-	url: 'http://triyanarief.com'
-});
-blog.save();
+// var blog = new Blog({
+// 	author: 'Triyan',
+// 	title: 'Triyan\'s Blog',
+// 	url: 'http://triyanarief.com'
+// });
+// blog.save();
 
 var app = express();
 
