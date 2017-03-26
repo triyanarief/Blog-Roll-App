@@ -124,7 +124,6 @@ $(document).ready(function() {
 		$('.author-input').val('');
 		$('.title-input').val('');
 		$('.url-input').val('');
-		console.log(blog.toJSON());
 		blogs.add(blog);
 		blog.save(null, {
 			success: function(response) {
