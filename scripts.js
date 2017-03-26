@@ -14,17 +14,17 @@ var Blogs = Backbone.Collection.extend({});
 
 // instantiate two Blogs
 
-var blog1 = new Blog({
-	author: 'Triyan',
-	title: 'Triyan\'s Blog',
-	url: 'http://triyanarief.github.io'
-});
-
-var blog2 = new Blog({
-	author: 'John',
-	title: 'John\'s Blog',
-	url: 'http://johnsblog.com'
-});
+// var blog1 = new Blog({
+// 	author: 'Triyan',
+// 	title: 'Triyan\'s Blog',
+// 	url: 'http://triyanarief.github.io'
+// });
+//
+// var blog2 = new Blog({
+// 	author: 'John',
+// 	title: 'John\'s Blog',
+// 	url: 'http://johnsblog.com'
+// });
 
 // instantiate a Collection
 
