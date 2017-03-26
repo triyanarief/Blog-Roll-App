@@ -10,7 +10,9 @@ var Blog = Backbone.Model.extend({
 
 // Backbone Collection
 
-var Blogs = Backbone.Collection.extend({});
+var Blogs = Backbone.Collection.extend({
+	url: 'http://localhost:3000/api/blogs'
+});
 
 // instantiate two Blogs
 
@@ -114,5 +116,13 @@ $(document).ready(function() {
 		$('.url-input').val('');
 		console.log(blog.toJSON());
 		blogs.add(blog);
-	})
-})
+		blog.save(null, {
+			success: function(response) {
+				console.log('Successfully SAVED blog with _id: ' + response.toJSON()._id);
+			},
+			error: function() {
+				console.log('Failed to save blog!');
+			}
+		});
+	});
+});
